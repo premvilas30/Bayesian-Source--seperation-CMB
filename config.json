@@ -1,0 +1,16 @@
+{
+  "input": {
+    "source_location": "../WMAP_data/",
+    "Files": [
+      "wmap_band_imap_r9_9yr_K_v5.fits",
+      "wmap_band_imap_r9_9yr_Ka_v5.fits",
+      "wmap_band_imap_r9_9yr_Q_v5.fits",
+      "wmap_band_imap_r9_9yr_V_v5.fits",
+      "wmap_band_imap_r9_9yr_W_v5.fits"
+    ]
+  },
+  "output": {
+    "ouput_path": "../WMAP_result/",
+    "Plot_output_path": "../WMAP_plot/"
+  }
+}

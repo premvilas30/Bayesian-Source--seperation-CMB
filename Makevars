@@ -1,0 +1,3 @@
+PKG_CXXFLAGS=-I/usr/lib
+PKG_CFLAGS=
+LIBS=-L/usr/lib -lgsl -lblas -lcholmod -lcamd -lamd -lcolamd -lsuitesparseconfig -lcfitsio -lm

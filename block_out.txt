@@ -1,0 +1,28 @@
+
+  *** block 0 *** 
+ index in image 
+0	1	2	4	5	6	7	8	9	10	11	12	13	14	15	
+ mask  
+ 1	1	1	0	1	1	1	1	1	1	1	1	1	1	1	1	
+  *** block 1 *** 
+ index in image 
+0	1	4	5	
+ mask  
+ 1	1	1	1	
+  *** block 2 *** 
+ index in image 
+2	6	7	
+ mask  
+ 1	0	1	1	
+  *** block 3 *** 
+ index in image 
+4	5	8	9	
+ mask  
+ 1	1	1	1	
+  *** block 4 *** 
+ index in image 
+6	7	10	11	
+ mask  
+ 1	1	1	1	
+ reverse map :
+0	1	2	0	3	4	5	6	7	8	9	10	11	12	13	14	

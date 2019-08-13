@@ -1,0 +1,623 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 26.08      2.23     2.23                             cholmod_ssmult
+ 20.00      3.94     1.71                             cholmod_transpose_sym
+ 16.96      5.39     1.45                             cholmod_rowfac_mask2
+  6.67      5.96     0.57                             cholmod_transpose_unsym
+  4.56      6.35     0.39      936     0.42     0.42  update_mu
+  3.63      6.66     0.31                             cholmod_add
+  3.63      6.97     0.31                             amd_2
+  3.04      7.23     0.26     1001     0.26     0.26  update_B
+  2.46      7.44     0.21                             cholmod_band
+  2.46      7.65     0.21     1001     0.21     0.29  update_Q
+  1.75      7.80     0.15                             cholmod_triplet_to_sparse
+  0.94      7.88     0.08 48025376     0.00     0.00  update_precision_link
+  0.94      7.96     0.08                             cholmod_band_inplace
+  0.82      8.03     0.07      919     0.08     0.08  model_log_likelihood
+  0.82      8.10     0.07                             cholmod_rowcolcounts
+  0.70      8.16     0.06       65     0.92     0.92  graph_create_sparse_precision_matrix_template
+  0.58      8.21     0.05       65     0.77     0.77  patch_set_up_B
+  0.58      8.26     0.05                             cholmod_etree
+  0.47      8.30     0.04      919     0.04     0.04  model_log_igmrf_prior
+  0.47      8.34     0.04                             cholmod_solve
+  0.35      8.37     0.03  3917994     0.00     0.00  graph_add_link
+  0.35      8.40     0.03        5     6.00     6.00  data_put_values
+  0.35      8.43     0.03        1    30.00    30.00  data_compute_det_C
+  0.23      8.45     0.02        5     4.00     4.00  data_healpix_reorder
+  0.23      8.47     0.02                             cholmod_copy
+  0.23      8.49     0.02                             cholmod_speye
+  0.12      8.50     0.01     5739     0.00     0.00  update_gdust_link
+  0.12      8.51     0.01      130     0.08     0.08  graph_allocate_link
+  0.12      8.52     0.01       65     0.15     0.15  graph_collapse_masked_nodes
+  0.12      8.53     0.01       65     0.15     0.92  graph_construct_exact_graph_ignoring_masked_pixels
+  0.12      8.54     0.01                             amd_post_tree
+  0.12      8.55     0.01                             cholmod_allocate_factor
+  0.00      8.55     0.00     5739     0.00     0.00  update_sync_link
+  0.00      8.55     0.00     1001     0.00     0.00  update_A
+  0.00      8.55     0.00     1001     0.00     0.94  update_patch
+  0.00      8.55     0.00     1000     0.00     0.00  update_Q__
+  0.00      8.55     0.00      919     0.00     0.00  model_jeff_spec_dust_log_prior
+  0.00      8.55     0.00      919     0.00     0.00  model_jeff_spec_sync_log_prior
+  0.00      8.55     0.00      919     0.00     0.00  model_log_conditional_igmrf_at_mode
+  0.00      8.55     0.00      919     0.00     0.12  model_log_joint_marginal_hyperpar
+  0.00      8.55     0.00      919     0.00     0.00  model_log_prior_hyperpar
+  0.00      8.55     0.00      801     0.00     1.22  gsl_objective_function
+  0.00      8.55     0.00      130     0.00     0.00  graph_create
+  0.00      8.55     0.00      130     0.00     0.00  graph_destroy
+  0.00      8.55     0.00       65     0.00     0.00  graph_create_sparse_precision_matrix_from_template
+  0.00      8.55     0.00       65     0.00     0.00  hyperpar_create
+  0.00      8.55     0.00       65     0.00     0.00  hyperpar_destroy
+  0.00      8.55     0.00       65     0.00     0.00  hyperpar_initialize
+  0.00      8.55     0.00       65     0.00     2.62  patch_create
+  0.00      8.55     0.00       65     0.00     0.00  patch_destroy
+  0.00      8.55     0.00       65     0.00     0.00  precision_prior_gamma_get_rates_shapes
+  0.00      8.55     0.00       65     0.00     0.00  routines_create_cholmod_common
+  0.00      8.55     0.00       65     0.00     0.00  routines_destroy_cholmod_common
+  0.00      8.55     0.00       64     0.00     0.00  update_L_initial
+  0.00      8.55     0.00       33     0.00     0.00  grid_z_to_theta
+  0.00      8.55     0.00       17     0.00     0.00  update_B_mult_mu
+  0.00      8.55     0.00        1     0.00     0.00  block_compute_healpix_mappings
+  0.00      8.55     0.00        1     0.00     0.00  block_create
+  0.00      8.55     0.00        1     0.00     0.00  block_destroy
+  0.00      8.55     0.00        1     0.00     0.00  data_get_mask
+  0.00      8.55     0.00        1     0.00    80.00  data_read_maps
+  0.00      8.55     0.00        1     0.00    15.99  grid_compute_posterior_functionals
+  0.00      8.55     0.00        1     0.00    41.44  grid_construct
+  0.00      8.55     0.00        1     0.00     0.00  grid_construct_axes
+  0.00      8.55     0.00        1     0.00     0.00  grid_create
+  0.00      8.55     0.00        1     0.00     0.00  grid_create_grid_axes
+  0.00      8.55     0.00        1     0.00     0.00  grid_destroy
+  0.00      8.55     0.00        1     0.00     0.00  grid_destroy_grid_axes
+  0.00      8.55     0.00        1     0.00   844.56  gsl_objective_function_gradient
+  0.00      8.55     0.00        1     0.00    88.97  optimizer
+  0.00      8.55     0.00        1     0.00    88.97  optimizer_get_hessian
+  0.00      8.55     0.00        1     0.00     0.00  optimizer_optpar_create
+  0.00      8.55     0.00        1     0.00     0.00  optimizer_optpar_destroy
+  0.00      8.55     0.00        1     0.00   170.00  patch_create_from_block
+  0.00      8.55     0.00        1     0.00     0.00  patch_destroy_from_block
+  0.00      8.55     0.00        1     0.00     0.00  results_create
+  0.00      8.55     0.00        1     0.00     0.00  results_create_fits_results_files
+  0.00      8.55     0.00        1     0.00     0.00  results_destroy
+  0.00      8.55     0.00        1     0.00     6.68  results_write_block_to_results
+  0.00      8.55     0.00        1     0.00   170.00  super_create
+  0.00      8.55     0.00        1     0.00     0.00  super_destroy
+  0.00      8.55     0.00        1     0.00   141.15  super_initialize
+  0.00      8.55     0.00        1     0.00    61.15  update_initial
+  0.00      8.55     0.00        1     0.00     0.00  wmap_get_7yr_band_frequency_and_error_precisions
+  0.00      8.55     0.00        1     0.00     0.00  wmap_get_7yr_data_file_names
+  0.00      8.55     0.00        1     0.00     0.00  wmap_get_7yr_result_file_names
+  0.00      8.55     0.00        1     0.00     0.00  wmap_get_7yr_temperature_analysis_mask_name
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.12% of 8.55 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     26.1    2.23    0.00                 cholmod_ssmult [1]
+-----------------------------------------------
+                                                 <spontaneous>
+[2]     20.0    1.71    0.00                 cholmod_transpose_sym [2]
+-----------------------------------------------
+                                                 <spontaneous>
+[3]     17.0    1.45    0.00                 cholmod_rowfac_mask2 [3]
+-----------------------------------------------
+                0.00    0.00       1/801         gsl_objective_function_and_gradient [6]
+                0.00    0.04      34/801         grid_construct [34]
+                0.00    0.09      73/801         optimizer_get_hessian [23]
+                0.00    0.84     693/801         gsl_objective_function_gradient [7]
+[4]     11.4    0.00    0.98     801         gsl_objective_function [4]
+                0.00    0.86     919/1001        update_patch [5]
+                0.00    0.11     919/919         model_log_joint_marginal_hyperpar [21]
+-----------------------------------------------
+                0.00    0.02      17/1001        grid_compute_posterior_functionals [43]
+                0.00    0.06      65/1001        update_initial [29]
+                0.00    0.86     919/1001        gsl_objective_function [4]
+[5]     11.0    0.00    0.94    1001         update_patch [5]
+                0.39    0.00     936/936         update_mu [10]
+                0.21    0.08    1001/1001        update_Q [13]
+                0.26    0.00    1001/1001        update_B [14]
+                0.00    0.00     936/1000        update_Q__ [53]
+-----------------------------------------------
+                                                 <spontaneous>
+[6]      9.9    0.00    0.85                 gsl_objective_function_and_gradient [6]
+                0.00    0.84       1/1           gsl_objective_function_gradient [7]
+                0.00    0.00       1/801         gsl_objective_function [4]
+-----------------------------------------------
+                0.00    0.84       1/1           gsl_objective_function_and_gradient [6]
+[7]      9.9    0.00    0.84       1         gsl_objective_function_gradient [7]
+                0.00    0.84     693/801         gsl_objective_function [4]
+-----------------------------------------------
+                                                 <spontaneous>
+[8]      6.7    0.57    0.00                 cholmod_transpose_unsym [8]
+-----------------------------------------------
+                                   1             main [9]
+[9]      5.4    0.00    0.46       0+1       main [9]
+                0.00    0.17       1/1           super_create [18]
+                0.00    0.14       1/1           super_initialize [20]
+                0.00    0.09       1/1           optimizer [22]
+                0.00    0.04       1/1           grid_construct [34]
+                0.00    0.02       1/1           grid_compute_posterior_functionals [43]
+                0.00    0.01       1/1           results_write_block_to_results [49]
+                0.00    0.00       1/5739        update_gdust_link [44]
+                0.00    0.00       1/1           wmap_get_7yr_data_file_names [87]
+                0.00    0.00       1/1           wmap_get_7yr_result_file_names [88]
+                0.00    0.00       1/1           wmap_get_7yr_temperature_analysis_mask_name [89]
+                0.00    0.00       1/1           wmap_get_7yr_band_frequency_and_error_precisions [86]
+                0.00    0.00       1/1           data_get_mask [73]
+                0.00    0.00       1/1           results_create [82]
+                0.00    0.00       1/1           results_create_fits_results_files [83]
+                0.00    0.00       1/1           super_destroy [85]
+                0.00    0.00       1/1           results_destroy [84]
+                0.00    0.00       1/1           optimizer_optpar_destroy [80]
+                0.00    0.00       1/5739        update_sync_link [52]
+                0.00    0.00       1/1           grid_destroy [77]
+                                   1             main [9]
+-----------------------------------------------
+                0.39    0.00     936/936         update_patch [5]
+[10]     4.6    0.39    0.00     936         update_mu [10]
+-----------------------------------------------
+                                                 <spontaneous>
+[11]     3.6    0.31    0.00                 cholmod_add [11]
+-----------------------------------------------
+                                                 <spontaneous>
+[12]     3.6    0.31    0.00                 amd_2 [12]
+-----------------------------------------------
+                0.21    0.08    1001/1001        update_patch [5]
+[13]     3.4    0.21    0.08    1001         update_Q [13]
+                0.08    0.00 48010104/48025376     update_precision_link [24]
+-----------------------------------------------
+                0.26    0.00    1001/1001        update_patch [5]
+[14]     3.1    0.26    0.00    1001         update_B [14]
+                0.00    0.00    1001/1001        update_A [50]
+-----------------------------------------------
+                                                 <spontaneous>
+[15]     2.5    0.21    0.00                 cholmod_band [15]
+-----------------------------------------------
+                0.00    0.17      65/65          patch_create_from_block [17]
+[16]     2.0    0.00    0.17      65         patch_create [16]
+                0.01    0.05      65/65          graph_construct_exact_graph_ignoring_masked_pixels [30]
+                0.06    0.00      65/65          graph_create_sparse_precision_matrix_template [31]
+                0.05    0.00      65/65          patch_set_up_B [32]
+                0.00    0.00      65/65          routines_create_cholmod_common [65]
+                0.00    0.00      65/65          graph_create_sparse_precision_matrix_from_template [59]
+-----------------------------------------------
+                0.00    0.17       1/1           super_create [18]
+[17]     2.0    0.00    0.17       1         patch_create_from_block [17]
+                0.00    0.17      65/65          patch_create [16]
+-----------------------------------------------
+                0.00    0.17       1/1           main [9]
+[18]     2.0    0.00    0.17       1         super_create [18]
+                0.00    0.17       1/1           patch_create_from_block [17]
+                0.00    0.00      65/65          hyperpar_create [60]
+                0.00    0.00       1/1           block_create [71]
+-----------------------------------------------
+                                                 <spontaneous>
+[19]     1.8    0.15    0.00                 cholmod_triplet_to_sparse [19]
+-----------------------------------------------
+                0.00    0.14       1/1           main [9]
+[20]     1.7    0.00    0.14       1         super_initialize [20]
+                0.00    0.08       1/1           data_read_maps [25]
+                0.00    0.06       1/1           update_initial [29]
+                0.00    0.00      65/65          hyperpar_initialize [62]
+                0.00    0.00       1/65          patch_destroy [63]
+-----------------------------------------------
+                0.00    0.11     919/919         gsl_objective_function [4]
+[21]     1.3    0.00    0.11     919         model_log_joint_marginal_hyperpar [21]
+                0.07    0.00     919/919         model_log_likelihood [27]
+                0.04    0.00     919/919         model_log_igmrf_prior [35]
+                0.00    0.00     919/919         model_log_prior_hyperpar [51]
+                0.00    0.00     919/919         model_log_conditional_igmrf_at_mode [56]
+-----------------------------------------------
+                0.00    0.09       1/1           main [9]
+[22]     1.0    0.00    0.09       1         optimizer [22]
+                0.00    0.09       1/1           optimizer_get_hessian [23]
+                0.00    0.00       1/1           optimizer_optpar_create [79]
+-----------------------------------------------
+                0.00    0.09       1/1           optimizer [22]
+[23]     1.0    0.00    0.09       1         optimizer_get_hessian [23]
+                0.00    0.09      73/801         gsl_objective_function [4]
+-----------------------------------------------
+                0.00    0.00   15272/48025376     results_write_block_to_results [49]
+                0.08    0.00 48010104/48025376     update_Q [13]
+[24]     0.9    0.08    0.00 48025376         update_precision_link [24]
+-----------------------------------------------
+                0.00    0.08       1/1           super_initialize [20]
+[25]     0.9    0.00    0.08       1         data_read_maps [25]
+                0.03    0.00       5/5           data_put_values [38]
+                0.03    0.00       1/1           data_compute_det_C [39]
+                0.02    0.00       5/5           data_healpix_reorder [40]
+-----------------------------------------------
+                                                 <spontaneous>
+[26]     0.9    0.08    0.00                 cholmod_band_inplace [26]
+-----------------------------------------------
+                0.07    0.00     919/919         model_log_joint_marginal_hyperpar [21]
+[27]     0.8    0.07    0.00     919         model_log_likelihood [27]
+-----------------------------------------------
+                                                 <spontaneous>
+[28]     0.8    0.07    0.00                 cholmod_rowcolcounts [28]
+-----------------------------------------------
+                0.00    0.06       1/1           super_initialize [20]
+[29]     0.7    0.00    0.06       1         update_initial [29]
+                0.00    0.06      65/1001        update_patch [5]
+                0.00    0.00      64/1000        update_Q__ [53]
+                0.00    0.00      64/64          update_L_initial [67]
+-----------------------------------------------
+                0.01    0.05      65/65          patch_create [16]
+[30]     0.7    0.01    0.05      65         graph_construct_exact_graph_ignoring_masked_pixels [30]
+                0.03    0.00 3917994/3917994     graph_add_link [37]
+                0.01    0.00     130/130         graph_allocate_link [45]
+                0.01    0.00      65/65          graph_collapse_masked_nodes [46]
+                0.00    0.00      65/130         graph_create [57]
+-----------------------------------------------
+                0.06    0.00      65/65          patch_create [16]
+[31]     0.7    0.06    0.00      65         graph_create_sparse_precision_matrix_template [31]
+-----------------------------------------------
+                0.05    0.00      65/65          patch_create [16]
+[32]     0.6    0.05    0.00      65         patch_set_up_B [32]
+-----------------------------------------------
+                                                 <spontaneous>
+[33]     0.6    0.05    0.00                 cholmod_etree [33]
+-----------------------------------------------
+                0.00    0.04       1/1           main [9]
+[34]     0.5    0.00    0.04       1         grid_construct [34]
+                0.00    0.04      34/801         gsl_objective_function [4]
+                0.00    0.00      33/33          grid_z_to_theta [68]
+                0.00    0.00       1/1           grid_construct_axes [74]
+                0.00    0.00       1/1           grid_create [75]
+                0.00    0.00       1/1           grid_destroy_grid_axes [78]
+-----------------------------------------------
+                0.04    0.00     919/919         model_log_joint_marginal_hyperpar [21]
+[35]     0.5    0.04    0.00     919         model_log_igmrf_prior [35]
+-----------------------------------------------
+                                                 <spontaneous>
+[36]     0.5    0.04    0.00                 cholmod_solve [36]
+-----------------------------------------------
+                0.03    0.00 3917994/3917994     graph_construct_exact_graph_ignoring_masked_pixels [30]
+[37]     0.4    0.03    0.00 3917994         graph_add_link [37]
+-----------------------------------------------
+                0.03    0.00       5/5           data_read_maps [25]
+[38]     0.4    0.03    0.00       5         data_put_values [38]
+-----------------------------------------------
+                0.03    0.00       1/1           data_read_maps [25]
+[39]     0.4    0.03    0.00       1         data_compute_det_C [39]
+-----------------------------------------------
+                0.02    0.00       5/5           data_read_maps [25]
+[40]     0.2    0.02    0.00       5         data_healpix_reorder [40]
+-----------------------------------------------
+                                                 <spontaneous>
+[41]     0.2    0.02    0.00                 cholmod_copy [41]
+-----------------------------------------------
+                                                 <spontaneous>
+[42]     0.2    0.02    0.00                 cholmod_speye [42]
+-----------------------------------------------
+                0.00    0.02       1/1           main [9]
+[43]     0.2    0.00    0.02       1         grid_compute_posterior_functionals [43]
+                0.00    0.02      17/1001        update_patch [5]
+                0.00    0.00      17/17          update_B_mult_mu [69]
+-----------------------------------------------
+                0.00    0.00       1/5739        main [9]
+                0.00    0.00     919/5739        model_log_prior_hyperpar [51]
+                0.00    0.00    1001/5739        update_A [50]
+                0.01    0.00    3818/5739        results_write_block_to_results [49]
+[44]     0.1    0.01    0.00    5739         update_gdust_link [44]
+-----------------------------------------------
+                0.01    0.00     130/130         graph_construct_exact_graph_ignoring_masked_pixels [30]
+[45]     0.1    0.01    0.00     130         graph_allocate_link [45]
+-----------------------------------------------
+                0.01    0.00      65/65          graph_construct_exact_graph_ignoring_masked_pixels [30]
+[46]     0.1    0.01    0.00      65         graph_collapse_masked_nodes [46]
+                0.00    0.00      65/130         graph_create [57]
+                0.00    0.00      65/130         graph_destroy [58]
+-----------------------------------------------
+                                                 <spontaneous>
+[47]     0.1    0.01    0.00                 amd_post_tree [47]
+-----------------------------------------------
+                                                 <spontaneous>
+[48]     0.1    0.01    0.00                 cholmod_allocate_factor [48]
+-----------------------------------------------
+                0.00    0.01       1/1           main [9]
+[49]     0.1    0.00    0.01       1         results_write_block_to_results [49]
+                0.01    0.00    3818/5739        update_gdust_link [44]
+                0.00    0.00   15272/48025376     update_precision_link [24]
+                0.00    0.00    3818/5739        update_sync_link [52]
+-----------------------------------------------
+                0.00    0.00    1001/1001        update_B [14]
+[50]     0.0    0.00    0.00    1001         update_A [50]
+                0.00    0.00    1001/5739        update_gdust_link [44]
+                0.00    0.00    1001/5739        update_sync_link [52]
+-----------------------------------------------
+                0.00    0.00     919/919         model_log_joint_marginal_hyperpar [21]
+[51]     0.0    0.00    0.00     919         model_log_prior_hyperpar [51]
+                0.00    0.00     919/5739        update_gdust_link [44]
+                0.00    0.00     919/5739        update_sync_link [52]
+                0.00    0.00     919/919         model_jeff_spec_sync_log_prior [55]
+                0.00    0.00     919/919         model_jeff_spec_dust_log_prior [54]
+-----------------------------------------------
+                0.00    0.00       1/5739        main [9]
+                0.00    0.00     919/5739        model_log_prior_hyperpar [51]
+                0.00    0.00    1001/5739        update_A [50]
+                0.00    0.00    3818/5739        results_write_block_to_results [49]
+[52]     0.0    0.00    0.00    5739         update_sync_link [52]
+-----------------------------------------------
+                0.00    0.00      64/1000        update_initial [29]
+                0.00    0.00     936/1000        update_patch [5]
+[53]     0.0    0.00    0.00    1000         update_Q__ [53]
+-----------------------------------------------
+                0.00    0.00     919/919         model_log_prior_hyperpar [51]
+[54]     0.0    0.00    0.00     919         model_jeff_spec_dust_log_prior [54]
+-----------------------------------------------
+                0.00    0.00     919/919         model_log_prior_hyperpar [51]
+[55]     0.0    0.00    0.00     919         model_jeff_spec_sync_log_prior [55]
+-----------------------------------------------
+                0.00    0.00     919/919         model_log_joint_marginal_hyperpar [21]
+[56]     0.0    0.00    0.00     919         model_log_conditional_igmrf_at_mode [56]
+-----------------------------------------------
+                0.00    0.00      65/130         graph_collapse_masked_nodes [46]
+                0.00    0.00      65/130         graph_construct_exact_graph_ignoring_masked_pixels [30]
+[57]     0.0    0.00    0.00     130         graph_create [57]
+-----------------------------------------------
+                0.00    0.00      65/130         graph_collapse_masked_nodes [46]
+                0.00    0.00      65/130         patch_destroy [63]
+[58]     0.0    0.00    0.00     130         graph_destroy [58]
+-----------------------------------------------
+                0.00    0.00      65/65          patch_create [16]
+[59]     0.0    0.00    0.00      65         graph_create_sparse_precision_matrix_from_template [59]
+-----------------------------------------------
+                0.00    0.00      65/65          super_create [18]
+[60]     0.0    0.00    0.00      65         hyperpar_create [60]
+-----------------------------------------------
+                0.00    0.00      65/65          super_destroy [85]
+[61]     0.0    0.00    0.00      65         hyperpar_destroy [61]
+-----------------------------------------------
+                0.00    0.00      65/65          super_initialize [20]
+[62]     0.0    0.00    0.00      65         hyperpar_initialize [62]
+                0.00    0.00      65/65          precision_prior_gamma_get_rates_shapes [64]
+-----------------------------------------------
+                0.00    0.00       1/65          super_initialize [20]
+                0.00    0.00      64/65          patch_destroy_from_block [81]
+[63]     0.0    0.00    0.00      65         patch_destroy [63]
+                0.00    0.00      65/130         graph_destroy [58]
+                0.00    0.00      65/65          routines_destroy_cholmod_common [66]
+-----------------------------------------------
+                0.00    0.00      65/65          hyperpar_initialize [62]
+[64]     0.0    0.00    0.00      65         precision_prior_gamma_get_rates_shapes [64]
+-----------------------------------------------
+                0.00    0.00      65/65          patch_create [16]
+[65]     0.0    0.00    0.00      65         routines_create_cholmod_common [65]
+-----------------------------------------------
+                0.00    0.00      65/65          patch_destroy [63]
+[66]     0.0    0.00    0.00      65         routines_destroy_cholmod_common [66]
+-----------------------------------------------
+                0.00    0.00      64/64          update_initial [29]
+[67]     0.0    0.00    0.00      64         update_L_initial [67]
+-----------------------------------------------
+                0.00    0.00      33/33          grid_construct [34]
+[68]     0.0    0.00    0.00      33         grid_z_to_theta [68]
+-----------------------------------------------
+                0.00    0.00      17/17          grid_compute_posterior_functionals [43]
+[69]     0.0    0.00    0.00      17         update_B_mult_mu [69]
+-----------------------------------------------
+                0.00    0.00       1/1           block_create [71]
+[70]     0.0    0.00    0.00       1         block_compute_healpix_mappings [70]
+-----------------------------------------------
+                0.00    0.00       1/1           super_create [18]
+[71]     0.0    0.00    0.00       1         block_create [71]
+                0.00    0.00       1/1           block_compute_healpix_mappings [70]
+-----------------------------------------------
+                0.00    0.00       1/1           super_destroy [85]
+[72]     0.0    0.00    0.00       1         block_destroy [72]
+-----------------------------------------------
+                0.00    0.00       1/1           main [9]
+[73]     0.0    0.00    0.00       1         data_get_mask [73]
+-----------------------------------------------
+                0.00    0.00       1/1           grid_construct [34]
+[74]     0.0    0.00    0.00       1         grid_construct_axes [74]
+                0.00    0.00       1/1           grid_create_grid_axes [76]
+-----------------------------------------------
+                0.00    0.00       1/1           grid_construct [34]
+[75]     0.0    0.00    0.00       1         grid_create [75]
+-----------------------------------------------
+                0.00    0.00       1/1           grid_construct_axes [74]
+[76]     0.0    0.00    0.00       1         grid_create_grid_axes [76]
+-----------------------------------------------
+                0.00    0.00       1/1           main [9]
+[77]     0.0    0.00    0.00       1         grid_destroy [77]
+-----------------------------------------------
+                0.00    0.00       1/1           grid_construct [34]
+[78]     0.0    0.00    0.00       1         grid_destroy_grid_axes [78]
+-----------------------------------------------
+                0.00    0.00       1/1           optimizer [22]
+[79]     0.0    0.00    0.00       1         optimizer_optpar_create [79]
+-----------------------------------------------
+                0.00    0.00       1/1           main [9]
+[80]     0.0    0.00    0.00       1         optimizer_optpar_destroy [80]
+-----------------------------------------------
+                0.00    0.00       1/1           super_destroy [85]
+[81]     0.0    0.00    0.00       1         patch_destroy_from_block [81]
+                0.00    0.00      64/65          patch_destroy [63]
+-----------------------------------------------
+                0.00    0.00       1/1           main [9]
+[82]     0.0    0.00    0.00       1         results_create [82]
+-----------------------------------------------
+                0.00    0.00       1/1           main [9]
+[83]     0.0    0.00    0.00       1         results_create_fits_results_files [83]
+-----------------------------------------------
+                0.00    0.00       1/1           main [9]
+[84]     0.0    0.00    0.00       1         results_destroy [84]
+-----------------------------------------------
+                0.00    0.00       1/1           main [9]
+[85]     0.0    0.00    0.00       1         super_destroy [85]
+                0.00    0.00      65/65          hyperpar_destroy [61]
+                0.00    0.00       1/1           patch_destroy_from_block [81]
+                0.00    0.00       1/1           block_destroy [72]
+-----------------------------------------------
+                0.00    0.00       1/1           main [9]
+[86]     0.0    0.00    0.00       1         wmap_get_7yr_band_frequency_and_error_precisions [86]
+-----------------------------------------------
+                0.00    0.00       1/1           main [9]
+[87]     0.0    0.00    0.00       1         wmap_get_7yr_data_file_names [87]
+-----------------------------------------------
+                0.00    0.00       1/1           main [9]
+[88]     0.0    0.00    0.00       1         wmap_get_7yr_result_file_names [88]
+-----------------------------------------------
+                0.00    0.00       1/1           main [9]
+[89]     0.0    0.00    0.00       1         wmap_get_7yr_temperature_analysis_mask_name [89]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [12] amd_2                  [59] graph_create_sparse_precision_matrix_from_template [63] patch_destroy
+  [47] amd_post_tree          [31] graph_create_sparse_precision_matrix_template [81] patch_destroy_from_block
+  [70] block_compute_healpix_mappings [58] graph_destroy  [32] patch_set_up_B
+  [71] block_create           [43] grid_compute_posterior_functionals [64] precision_prior_gamma_get_rates_shapes
+  [72] block_destroy          [34] grid_construct         [82] results_create
+  [11] cholmod_add            [74] grid_construct_axes    [83] results_create_fits_results_files
+  [48] cholmod_allocate_factor [75] grid_create           [84] results_destroy
+  [15] cholmod_band           [76] grid_create_grid_axes  [49] results_write_block_to_results
+  [26] cholmod_band_inplace   [77] grid_destroy           [65] routines_create_cholmod_common
+  [41] cholmod_copy           [78] grid_destroy_grid_axes [66] routines_destroy_cholmod_common
+  [33] cholmod_etree          [68] grid_z_to_theta        [18] super_create
+  [28] cholmod_rowcolcounts    [4] gsl_objective_function [85] super_destroy
+   [3] cholmod_rowfac_mask2    [7] gsl_objective_function_gradient [20] super_initialize
+  [36] cholmod_solve          [60] hyperpar_create        [50] update_A
+  [42] cholmod_speye          [61] hyperpar_destroy       [14] update_B
+   [1] cholmod_ssmult         [62] hyperpar_initialize    [69] update_B_mult_mu
+   [2] cholmod_transpose_sym  [54] model_jeff_spec_dust_log_prior [67] update_L_initial
+   [8] cholmod_transpose_unsym [55] model_jeff_spec_sync_log_prior [13] update_Q
+  [19] cholmod_triplet_to_sparse [56] model_log_conditional_igmrf_at_mode [53] update_Q__
+  [39] data_compute_det_C     [35] model_log_igmrf_prior  [44] update_gdust_link
+  [73] data_get_mask          [21] model_log_joint_marginal_hyperpar [29] update_initial
+  [40] data_healpix_reorder   [27] model_log_likelihood   [10] update_mu
+  [38] data_put_values        [51] model_log_prior_hyperpar [5] update_patch
+  [25] data_read_maps         [22] optimizer              [24] update_precision_link
+  [37] graph_add_link         [23] optimizer_get_hessian  [52] update_sync_link
+  [45] graph_allocate_link    [79] optimizer_optpar_create [86] wmap_get_7yr_band_frequency_and_error_precisions
+  [46] graph_collapse_masked_nodes [80] optimizer_optpar_destroy [87] wmap_get_7yr_data_file_names
+  [30] graph_construct_exact_graph_ignoring_masked_pixels [16] patch_create [88] wmap_get_7yr_result_file_names
+  [57] graph_create           [17] patch_create_from_block [89] wmap_get_7yr_temperature_analysis_mask_name
